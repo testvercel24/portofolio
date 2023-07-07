@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+header {
+	background-color: #2b072b22;
+	width: 100vw;
+}
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav {
+	display: flex;
+	justify-content: center;
+}
+
+.nav-bar {
+	padding-right: 1rem;
+}
+.icon-container {
+	padding-left: 1rem;
+	display: flex;
+	align-items: center;
+}
+.icon-container img {
+	width: 2.5rem;
+	height: 2rem;
+}
+.icon-container b {
+	font-size: 1.5rem;
+}
+book-details {
+	margin-top: 16px;
+}
+nav button {
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	width: 5rem;
+	height: 4rem;
+}
+nav button:hover {
+	color: #ffff;
+	background-color: #000;
+}
