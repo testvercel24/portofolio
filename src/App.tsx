@@ -1,18 +1,13 @@
-import './App.css';
-import { BrowserRouter, Routes, Route,RedirectFunction, useNavigate} from "react-router-dom";
-import Header from './component/Header/Header';
-import Home from './container/Home/Home';
-import Book from './container/Books/Books';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./container/Home/Home";
 function App() {
   return (
     <div className="App">
-      <Header/>
       <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path='/' element={<Home/>}/>
-          <Route path="/book" element={<Book />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
       </Routes>
-
     </div>
   );
 }

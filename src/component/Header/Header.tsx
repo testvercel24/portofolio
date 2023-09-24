@@ -1,22 +1,46 @@
-import React from 'react';
-import './Header.css';
-import icon from '../../assets/book.png';
+import React from "react";
+import "./Header.css";
+import {
+  HeaderContainer,
+  IconContainer,
+  MenuContainer,
+  StyledMenuItem,
+  StyledParagraph,
+} from "./Header.styles";
 const Header: React.FC = () => {
   return (
-    <header>
-      <div className='header-container'>
-      <div className='icon-container'>
-        <img src={icon} alt="no image" />
-        <p><b>React App</b></p>
+    <HeaderContainer>
+      <div className="name-container">
+        <IconContainer>
+          <div>
+            <img className="smily-image" src="/smily.png" alt="icon" />
+          </div>
+          <StyledParagraph>Vishnu Padiga's</StyledParagraph>
+        </IconContainer>
       </div>
-      <div className='nav-bar'>
-      <nav>
-        <button>Home</button>
-        <button>Search</button>
-      </nav>
-      </div>
-      </div>
-    </header>
+      <MenuContainer>
+        <StyledMenuItem>
+          <StyledParagraph>Home</StyledParagraph>
+        </StyledMenuItem>
+        <StyledMenuItem>
+          <StyledParagraph>Portfolio</StyledParagraph>
+        </StyledMenuItem>
+        <StyledMenuItem>
+          <StyledParagraph>About</StyledParagraph>
+        </StyledMenuItem>
+      </MenuContainer>
+      <MenuContainer>
+        <StyledMenuItem>
+          <img className="smily-image" src="/globe.png" alt="icon" />
+        </StyledMenuItem>
+        <StyledMenuItem>
+          <StyledParagraph>ln</StyledParagraph>
+        </StyledMenuItem>
+        <StyledMenuItem>
+          <StyledParagraph>Menu</StyledParagraph>
+        </StyledMenuItem>
+      </MenuContainer>
+    </HeaderContainer>
   );
 };
 export default Header;

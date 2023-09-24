@@ -1,0 +1,23 @@
+.book-details-container {
+	display: flex;
+	column-gap: 3rem;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3rem;
+	padding: 2rem;
+	border: 0.2rem solid #ebebeb;
+	border-radius: 1rem;
+	flex-wrap: wrap;
+}
+.book-details-container img {
+	width: 11rem;
+	height: 15rem;
+}
+.details {
+	max-width: 23rem;
+	text-align: justify;
+}
+.container {
+	justify-content: center;
+	display: flex;
+}
