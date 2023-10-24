@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 import {
   AboutParagraph,
@@ -15,6 +15,26 @@ import {
 import Header from "../../component/Header/Header";
 
 const Home: React.FC = () => {
+  const startDate = new Date(2023, 1, 18);
+  const currentDate = new Date();
+  const [yearsCount, setYearsCount] = useState<number>();
+  const [monthsCount, setMonthsCount] = useState<number>();
+  useEffect(() => {
+    const monthDiff = monthsDiff(startDate, currentDate);
+    monthsToYearsAndMonths(monthDiff);
+  });
+  const monthsDiff = (startDate: Date, endDate: Date) => {
+    const yearDiff = endDate.getFullYear() - startDate.getFullYear();
+    const monthDiff = endDate.getMonth() - startDate.getMonth();
+    return yearDiff * 12 + monthDiff;
+  };
+
+  const monthsToYearsAndMonths = (months: number) => {
+    const years = Math.floor(months / 12);
+    const remainingMonths = months % 12;
+    setYearsCount(years);
+    setMonthsCount(remainingMonths);
+  };
   return (
     <PortofolioContainer>
       <Header />
@@ -31,8 +51,9 @@ const Home: React.FC = () => {
           <Line />
           <AboutParagraph>
             A developer who have knowledge in developing web pages <br />{" "}
-            including both frontend and backend alongh with unit testing,
-            <br /> with more than 5 years experience
+            including both frontend and backend along with unit testing,
+            <br /> with more than {yearsCount} years {monthsCount} months
+            experience
           </AboutParagraph>
         </DetailsContainer>
         <DetailsRightContainer>
