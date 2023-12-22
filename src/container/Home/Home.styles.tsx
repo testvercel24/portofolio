@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import { ThemePallette } from "../../store/ThemeStore";
 
 export const PortofolioContainer = styled.div`
   width: 100vw;
@@ -8,7 +7,7 @@ export const PortofolioContainer = styled.div`
 `;
 export const BodyContainaer = styled.div`
   width: 100%;
-  height: 100%;
+  height: 87%;
   background-color: rgba(0, 0, 0, 0);
 `;
 export const RoundContainer = styled.div`
@@ -29,14 +28,14 @@ export const RoundDiv = styled.div`
   z-index: 1;
 `;
 export const DetailsContainer = styled.div`
-  min-width: 4rem;
+  max-width: 44rem;
   min-height: 4rem;
   background-color: rgba(0, 0, 0, 0);
   position: relative;
   z-index: 2;
   left: 7rem;
   text-align: justify;
-  top: -38rem;
+  top: -31rem;
   color: #fff;
 `;
 export const NameConatiner = styled.div``;
@@ -55,14 +54,14 @@ export const AboutParagraph = styled.p`
   color: #afaeae;
 `;
 export const DetailsRightContainer = styled.div`
-  min-width: 4rem;
+  max-width: 17rem;
   min-height: 4rem;
   background-color: rgba(0, 0, 0, 0);
   position: relative;
   z-index: 2;
   right: -60rem;
   text-align: justify;
-  top: -52rem;
+  top: -46rem;
   color: #fff;
   > p {
     font-size: 1.2rem !important;
@@ -75,5 +74,7 @@ export const ImageContainer = styled.div`
   top: 6rem;
 `;
 export const LinksContainer = styled.div`
-  width: 10rem;
+  position: relative;
+  top: -35rem;
+  left: 36rem;
 `;

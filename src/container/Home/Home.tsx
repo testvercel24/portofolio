@@ -7,12 +7,14 @@ import {
   DetailsRightContainer,
   ImageContainer,
   Line,
+  LinksContainer,
   Name,
   PortofolioContainer,
   RoundContainer,
   RoundDiv,
 } from "./Home.styles";
 import Header from "../../component/Header/Header";
+import LinkBox from "../../component/LinkBox/LinkBox";
 
 const Home: React.FC = () => {
   const startDate = new Date(2023, 1, 18);
@@ -38,18 +40,18 @@ const Home: React.FC = () => {
   return (
     <PortofolioContainer>
       <Header />
-      <BodyContainaer>
-        <RoundContainer>
-          <RoundDiv></RoundDiv>
+      <BodyContainaer className="body-container">
+        <RoundContainer className="round-container">
+          <RoundDiv className="round"></RoundDiv>
           <ImageContainer>
             <img src="/vishnu.png" width="310" height="370" alt="" />
           </ImageContainer>
         </RoundContainer>
-        <DetailsContainer>
+        <DetailsContainer className="deatails-container">
           <Name>I'm</Name>
           <Name>Vishnu Padiga</Name>
           <Line />
-          <AboutParagraph>
+          <AboutParagraph className="paragraph">
             A developer who have knowledge in developing web pages <br />{" "}
             including both frontend and backend along with unit testing,
             <br /> with more than {yearsCount} years {monthsCount} months
@@ -57,7 +59,7 @@ const Home: React.FC = () => {
           </AboutParagraph>
         </DetailsContainer>
         <DetailsRightContainer>
-          <AboutParagraph>
+          <AboutParagraph className="paragraph">
             Services
             <br />
             <br />
@@ -66,6 +68,9 @@ const Home: React.FC = () => {
             <br /> my services
           </AboutParagraph>
         </DetailsRightContainer>
+        <LinksContainer className="link-container">
+          <LinkBox />
+        </LinksContainer>
       </BodyContainaer>
     </PortofolioContainer>
   );

@@ -32,6 +32,12 @@ export const StyledParagraph = styled.p`
   &:hover {
     color: #ffffff;
   }
+  &.active {
+    color: #ffffff;
+  }
+  &.insctive {
+    color: #b4b4b4;
+  }
 `;
 export const MenuContainer = styled.div`
   display: flex;
