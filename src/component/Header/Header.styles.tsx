@@ -35,7 +35,7 @@ export const StyledParagraph = styled.p`
   &.active {
     color: #ffffff;
   }
-  &.insctive {
+  &.inactive {
     color: #b4b4b4;
   }
 `;
@@ -49,4 +49,18 @@ export const StyledMenuItem = styled.div`
   &:hover {
     color: #ffffff;
   }
+`;
+export const MenuMainContainer=styled.div`
+max-width:fit-content;
+max-height:min-content;
+position:absolute;
+top:5rem;
+&.menu-active{
+  right:0rem
+}
+&.menu-inactive{
+  right:-15rem;
+  position:fixed;
+}
+
 `;

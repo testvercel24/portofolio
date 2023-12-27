@@ -74,6 +74,7 @@ export const ImageContainer = styled.div`
   top: 6rem;
 `;
 export const LinksContainer = styled.div`
+max-width: fit-content;
   position: relative;
   top: -35rem;
   left: 36rem;
