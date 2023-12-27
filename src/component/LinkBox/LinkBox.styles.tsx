@@ -9,4 +9,6 @@ export const LinkInnerBox = styled.div`
   background-color: #111111;
   width: 12rem;
   height: 3rem;
+  display: flex;
+  justify-content: space-evenly;
 `;

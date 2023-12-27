@@ -4,6 +4,9 @@ export const PortofolioContainer = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: #181818;
+  @media (max-width: 500px) {
+    height: 100%;
+  }
 `;
 export const BodyContainaer = styled.div`
   width: 100%;
@@ -37,6 +40,13 @@ export const DetailsContainer = styled.div`
   text-align: justify;
   top: -31rem;
   color: #fff;
+  // word-break: break-word;
+  // overflow-wrap: break-word;
+  @media (max-width: 500px) {
+    top:4rem;
+    padding:2rem;
+    left:0rem;
+  }
 `;
 export const NameConatiner = styled.div``;
 export const Line = styled.div`
@@ -66,9 +76,14 @@ export const DetailsRightContainer = styled.div`
   > p {
     font-size: 1.2rem !important;
   }
+  @media (max-width: 500px) {
+    top:3rem;
+    padding:2rem;
+    margin-bottom:2rem;
+    right:0rem;
+  }
 `;
 export const ImageContainer = styled.div`
-  left: 37rem;
   position: absolute;
   z-index: 4;
   top: 6rem;
@@ -76,6 +91,10 @@ export const ImageContainer = styled.div`
 export const LinksContainer = styled.div`
 max-width: fit-content;
   position: relative;
-  top: -35rem;
-  left: 36rem;
+  top: -37rem;
+  left: 43%;
+  @media (max-width: 500px) {
+    top: 0rem;
+    left: 25%;
+  }
 `;

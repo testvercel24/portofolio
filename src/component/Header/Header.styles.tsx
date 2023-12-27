@@ -24,6 +24,9 @@ export const IconContainer = styled.div`
   display: flex;
   gap: 0.4rem;
   padding-left: 2rem;
+  @media (max-width: 500px) {
+    padding-left: 1rem;
+  }
 `;
 export const StyledParagraph = styled.p`
   font-size: 1rem;
@@ -41,6 +44,11 @@ export const StyledParagraph = styled.p`
 `;
 export const MenuContainer = styled.div`
   display: flex;
+  &.menu-container{
+    @media (max-width: 500px) {
+     display:none
+    }
+  }
 `;
 export const StyledMenuItem = styled.div`
   padding-left: 2rem;
@@ -49,17 +57,22 @@ export const StyledMenuItem = styled.div`
   &:hover {
     color: #ffffff;
   }
+  @media (max-width: 500px) {
+    padding-left: 1rem;
+  padding-right: 1rem;
+  }
 `;
 export const MenuMainContainer=styled.div`
 max-width:fit-content;
 max-height:min-content;
 position:absolute;
 top:5rem;
+z-index: 5;
 &.menu-active{
-  right:0rem
+  right:0rem;
 }
 &.menu-inactive{
-  right:-15rem;
+  right:-20rem;
   position:fixed;
 }
 
